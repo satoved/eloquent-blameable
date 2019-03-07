@@ -138,9 +138,9 @@ return [
 Schema::create('some_tables', function (Blueprint $table) {
     // ...
     
-    $table->integer('created_by')->nullable();
-    $table->integer('updated_by')->nullable();
-    $table->integer('deleted_by')->nullable();
+    $table->unsignedInteger('created_by')->nullable();
+    $table->unsignedInteger('updated_by')->nullable();
+    $table->unsignedInteger('deleted_by')->nullable();
 
     // ...
     
